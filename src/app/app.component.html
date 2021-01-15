@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ITSA</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <nav>
+            <a href="/home">
+                <img src="assets/images/logo.png" class="logo">
+            </a>
+            <a href="/events">
+                Events
+            </a>
+            <a href="/teams">
+                Teams
+            </a>
+            <a routerLink="/top">
+                Fiesta
+            </a>
+        </nav>
+        <div style="height: auto; overflow: auto; padding-top: 3%;">
+	    	<router-outlet></router-outlet>
+        </div>
+        <div class="footer">
+            <div class="row">
+                <div class="column">
+                    <div class="footer-icons">
+                        <i class="fa fa-map-marker" style="font-size:40px; color:white;"></i><h3>Find Us At:</h3>
+                    </div>
+                    <p>Pune Vidyarthi Griha's</p>
+                    <p>College Of Engineering and Technology, Pune</p>
+                    <p>44, Vidya Nagari, Shivdarshan, Parvati, Pune - 411009</p>
+                    <p>Maharashtra - INDIA</p>
+                </div>
+                <div class="column">
+                    <div class="footer-icons">
+                        <i class="fa fa-phone" style="font-size:40px; color:white;"></i>
+                        <h3>Contact Us At:</h3>
+                    </div>
+                    <p>itsapvg@gmail.com</p>
+                </div>
+                <div class="column">
+                    <div class="footer-icons">
+                        <i class="fa fa-mobile" style="font-size:40px; color:white;"></i>
+                        <h3>Follow Us On:</h3>
+                    </div>
+                    <div class="footer-icons">
+                        <p><a href="https://www.facebook.com/itsapvg/"><i class="fa fa-facebook" style="font-size:40px; color:white;"></i></a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <a href="https://www.instagram.com/itsapvg/"><i class="fa fa-instagram" style="font-size:40px; color:white;"></i></a>
+                        </p>
+                        <p><a href="https://www.linkedin.com/company/itsapvg/"><i class="fa fa-linkedin" style="font-size:40px; color:white;"></i></a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+                    </div>
+                </div>
+            </div>
+            <p class="lastLine">Developed by Deepak Chaudhari | &copy;ITSA</p>
+        </div>
+    </body>
+</html>

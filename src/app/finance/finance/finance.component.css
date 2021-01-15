@@ -1,0 +1,14 @@
+.leader {
+  width: 100%;
+  overflow: auto;
+}
+.student {
+  width: 33.33%;
+  display: block;
+  float: left;
+}
+@media screen and (max-width: 600px) {
+	.student {
+		width: 100%;
+	}
+}

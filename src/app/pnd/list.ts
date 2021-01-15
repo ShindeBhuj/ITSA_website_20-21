@@ -1,0 +1,57 @@
+import {Displayinfo} from '../displayinfo';
+export const List: Displayinfo[] =[
+  {id:1,
+  name :'Shashank Thigale',
+  photo :'http://gdurl.com/5d3ZN',
+  year :'Head',
+  facebooklk:'',
+  twitterlk:'',
+  instalk:'https://www.instagram.com/photon_11/',
+  linkedinlk:'https://www.linkedin.com/in/shashank-thigale-b26aa0122'
+  },
+  {id:2,
+  name :'Saurabh Waikule',
+  photo :'http://gdurl.com/22-V',
+  year :'BE',
+  facebooklk:'',
+  twitterlk:'',
+  instalk:'',
+  linkedinlk:'https://www.linkedin.com/in/saurabh-waikule-2b222a164'
+  },
+  {id:3,
+  name :'Aditya Gujalwar',
+  photo :'http://gdurl.com/V3TY',
+  year :'BE',
+  facebooklk:'',
+  twitterlk:'',
+  instalk:'',
+  linkedinlk:'www.linkedin.com/in/aditya-gujalwar-472a77168'
+  },
+  {id:4,
+  name :'Vishal Hangargekar',
+  photo :'http://gdurl.com/Bjxc',
+  year :'SE',
+  facebooklk:'https://www.facebook.com/profile.php?id=100010290875835',
+  twitterlk:'http://twitter.com/@vhangargekar',
+  instalk:'http://instagram.com/_mi_vishal__',
+  linkedinlk:'https://www.linkedin.com/in/vishal-hangargekar-b57035181'
+  },
+  {id:5,
+  name :'Kaushal Bhandari',
+  photo :'http://gdurl.com/EQ1P',
+  year :'SE',
+  facebooklk:'https://www.facebook.com/kaushal.bhandari.338',
+  twitterlk:'',
+  instalk:'https://instagram.com/kaushal__bhandari',
+  linkedinlk:''
+  },
+  {id:6,
+  name :'Mehul Sardesai',
+  photo :'http://gdurl.com/Ud5Ur',
+  year :'SE',
+  facebooklk:'https://www.facebook.com/mehul.sardesai.7',
+  twitterlk:'',
+  instalk:'https://www.instagram.com/mehulsardesai/',
+  linkedinlk:''
+  }
+];

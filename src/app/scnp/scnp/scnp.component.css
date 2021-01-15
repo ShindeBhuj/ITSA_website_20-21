@@ -1,0 +1,25 @@
+.wnt {
+  width: 100%;
+  overflow: auto;
+}
+.one {
+  width: 100%;
+  display: block;
+  float: left;
+}
+.three {
+  width: 33.33%;
+  display: block;
+  float: left;
+}
+.two {
+  width: 50%;
+  display: block;
+  float: left;
+
+}
+@media screen and (max-width: 600px) {
+  .one, .two, .three {
+    width: 100%;
+  }
+}

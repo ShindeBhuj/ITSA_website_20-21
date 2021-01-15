@@ -1,0 +1,88 @@
+<body>
+
+	<div class="title">
+		<img class="card-img-top" src="/assets/image/Bakelite_logo.jpg" alt="Sponsor name">
+	</div>
+
+  <div class="sponsor">
+    <h1>
+      fiesta
+      <div class="date">
+        22<sup>nd</sup>-23<sup>rd</sup> March 2k19
+      </div>
+    </h1>
+  </div>
+
+  
+    <div class="marginsponser">
+      <div class="row">
+        <div class="logo">
+          <img class="card-img-top" src="/assets/image/religare.png" alt="Sponsor name">
+          </div>
+        <div class="logo">
+            <img class="card-img-top" src="/assets/image/maprologo.jpg" alt="Sponsor name">
+        </div>
+        <div class="logo">
+              <img class="card-img-top" src="/assets/image/multifit_logo.jpg" alt="Sponsor name">
+        </div>
+        <div class="logo">
+            <img class="card-img-top" src="/assets/image/redbulllogo.png" alt="Sponsor name">
+          </div>
+        <div class="logo">
+            <img class="card-img-top" src="/assets/image/clickclikat.png" alt="Sponsor name">
+          </div>
+        </div>
+      </div>
+    
+      <div class="margin">
+          <div class="row">
+            <div class="col-sm-6">
+                <button id="tech_button" type="button" href="#technical" (click)="technical()" class="btn btn-primary btn-block shadow-lg p-3 mb-6 " [ngClass]="{active: p==='technical'}" >Technical Event</button>
+            </div>
+            <div class="col-sm-6">
+                <button id="nontech_button" href="#nontechnical"  (click)="nontechnical()" class="btn btn-primary  btn-block shadow-lg p-3 mb-6" [ngClass]="{active: p==='nontechnical'}">Non-Technical Event</button>
+            </div>
+          </div>
+      </div>
+    <div class="choice" style="margin-bottom: 0%"> 
+      <div [ngSwitch]="p" style="margin-bottom: 0%">
+        <div *ngSwitchCase="'technical'" style="margin-bottom: 0% ">
+          <div id="technical">
+            <app-technical></app-technical>
+          </div>
+        </div>
+        <div *ngSwitchCase="'nontechnical'" style="margin-bottom: 0%">
+          <div id="nontechnical">
+            <app-nontechnical></app-nontechnical>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer style="margin-top: 2%; margin-bottom: 0%;">
+      <div class="container"style="margin: 0%;" >
+          <div class="panel panel-default" >
+        <div class="row" >
+          <div class="col-sm-5" style="padding-top: 2%; ">
+              <div class="panel-body text-left">Our Social Media Handles:</div>
+              <div class="panel-footer text-left">
+                <a href="https://www.facebook.com/itsapvg/">
+                <img  class="social" style=" height: 12%;width: 12%;margin-top: 2%;margin-left: 0%;"
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iOTYiIGhlaWdodD0iOTYiCnZpZXdCb3g9IjAgMCAyMjQgMjI0IgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDIyNHYtMjI0aDIyNHYyMjR6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iI2ZmZmZmZiI+PGcgaWQ9InN1cmZhY2UxIj48cGF0aCBkPSJNNDksMzVjLTcuNjU2MjUsMCAtMTQsNi4zNDM3NSAtMTQsMTR2MTI2YzAsNy42NTYyNSA2LjM0Mzc1LDE0IDE0LDE0aDEyNmM3LjY1NjI1LDAgMTQsLTYuMzQzNzUgMTQsLTE0di0xMjZjMCwtNy42NTYyNSAtNi4zNDM3NSwtMTQgLTE0LC0xNHpNNDksNDloMTI2djEyNmgtMzYuMzEyNXYtNDcuMjVoMTguMTU2MjVsMi42MjUsLTIxaC0yMC43ODEyNXYtMTMuNTYyNWMwLC02LjEyNSAxLjUwMzkxLC0xMC4yODEyNSAxMC4yODEyNSwtMTAuMjgxMjVoMTEuMzc1di0xOS4wMzEyNWMtMS45NDE0MSwtMC4yNDYwOSAtOC42Njc5NywtMC42NTYyNSAtMTYuNDA2MjUsLTAuNjU2MjVjLTE2LjEzMjgxLDAgLTI3LjEyNSw5LjcwNzAzIC0yNy4xMjUsMjcuNzgxMjV2MTUuNzVoLTE4LjM3NXYyMWgxOC4zNzV2NDcuMjVoLTY3LjgxMjV6Ij48L3BhdGg+PC9nPjwvZz48L2c+PC9zdmc+">
+                </a>
+                <a href="https://instagram.com/itsapvg?utm_source=ig_profile_share&igshid=1ew2vzo3rda">
+                <img  class="social" style=" height: 12%;width: 12%;margin-top: 2%;margin-left: 0%;"
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iOTYiIGhlaWdodD0iOTYiCnZpZXdCb3g9IjAgMCAyMjQgMjI0IgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDIyNHYtMjI0aDIyNHYyMjR6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iI2ZmZmZmZiI+PGcgaWQ9InN1cmZhY2UxIj48cGF0aCBkPSJNODAuMjgxMjUsMzVjLTI0Ljg1NTQ3LDAgLTQ1LjI4MTI1LDIwLjM5ODQ0IC00NS4yODEyNSw0NS4yODEyNXY2My40Mzc1YzAsMjQuODU1NDcgMjAuMzk4NDQsNDUuMjgxMjUgNDUuMjgxMjUsNDUuMjgxMjVoNjMuNDM3NWMyNC44NTU0NywwIDQ1LjI4MTI1LC0yMC4zOTg0MyA0NS4yODEyNSwtNDUuMjgxMjV2LTYzLjQzNzVjMCwtMjQuODU1NDcgLTIwLjM5ODQzLC00NS4yODEyNSAtNDUuMjgxMjUsLTQ1LjI4MTI1ek04MC4yODEyNSw0OWg2My40Mzc1YzE3LjMwODU5LDAgMzEuMjgxMjUsMTMuOTcyNjYgMzEuMjgxMjUsMzEuMjgxMjV2NjMuNDM3NWMwLDE3LjMwODU5IC0xMy45NzI2NiwzMS4yODEyNSAtMzEuMjgxMjUsMzEuMjgxMjVoLTYzLjQzNzVjLTE3LjMwODU5LDAgLTMxLjI4MTI1LC0xMy45NzI2NiAtMzEuMjgxMjUsLTMxLjI4MTI1di02My40Mzc1YzAsLTE3LjMwODU5IDEzLjk3MjY2LC0zMS4yODEyNSAzMS4yODEyNSwtMzEuMjgxMjV6TTE1My4zNDM3NSw2NC4zMTI1Yy0zLjUyNzM0LDAgLTYuMzQzNzUsMi44MTY0MSAtNi4zNDM3NSw2LjM0Mzc1YzAsMy41MjczNCAyLjgxNjQxLDYuMzQzNzUgNi4zNDM3NSw2LjM0Mzc1YzMuNTI3MzQsMCA2LjM0Mzc1LC0yLjgxNjQxIDYuMzQzNzUsLTYuMzQzNzVjMCwtMy41MjczNCAtMi44MTY0MSwtNi4zNDM3NSAtNi4zNDM3NSwtNi4zNDM3NXpNMTEyLDcwYy0yMy4xMDU0NywwIC00MiwxOC44OTQ1MyAtNDIsNDJjMCwyMy4xMDU0NyAxOC44OTQ1Myw0MiA0Miw0MmMyMy4xMDU0NywwIDQyLC0xOC44OTQ1MyA0MiwtNDJjMCwtMjMuMTA1NDcgLTE4Ljg5NDUzLC00MiAtNDIsLTQyek0xMTIsODRjMTUuNTU4NTksMCAyOCwxMi40NDE0MSAyOCwyOGMwLDE1LjU1ODU5IC0xMi40NDE0MSwyOCAtMjgsMjhjLTE1LjU1ODU5LDAgLTI4LC0xMi40NDE0MSAtMjgsLTI4YzAsLTE1LjU1ODU5IDEyLjQ0MTQxLC0yOCAyOCwtMjh6Ij48L3BhdGg+PC9nPjwvZz48L2c+PC9zdmc+">
+              </a>
+            </div>
+              </div>
+              <div class="col-sm-1"></div>
+        <div class="col-sm-6" style="padding-top: 2%;">
+            <div class="panel-body text-left">Developed BY:</div>
+            <div class="panel-footer text-left">Deepak Chaudhari</div>
+            <div class="panel-body text-left">Contact us:Deepak Chaudhari 9146070340</div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </footer>
+    </body>

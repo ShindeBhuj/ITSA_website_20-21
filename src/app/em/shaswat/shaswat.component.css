@@ -1,0 +1,52 @@
+.name{
+    text-align: center;
+    font-size: 300%;
+  }
+  .year{
+    text-align: center;
+    font-size: 200%;
+  }
+  .icon{
+    display: inline-block;
+    padding: 10px;
+    left: auto;
+    right: auto;
+  }
+  #alignment{
+    text-align:center;
+  }
+  #profilepic{
+    display: block;
+    width: 85%;
+    height: 10%;
+    border-radius: 150px 150px 150px 150px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+  }
+  #card{
+    background-color: white;
+    border-radius: 15px 15px 15px 15px;
+    display: block;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+  
+  }
+  @media screen and (max-width: 600px) {
+    #card {
+      width: 90%;
+    }
+    .name {
+      font-size: 200%;
+    }
+    .year {
+      font-size: 150%;
+    }
+    .icon {
+      padding: 5px;
+    }
+  }
+  

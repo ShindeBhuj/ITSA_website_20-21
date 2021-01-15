@@ -1,0 +1,34 @@
+<div class="timeline">
+    <div *ngFor="let event of eventdetail; let i = index">
+        <div class="container left" *ngIf="(i % 2) === 0; else elseBlock">
+            <div class="content">
+                <img src="assets/images/{{event.IMG}}">
+                <h2>
+                    {{event.EventName}}
+                </h2>
+                <p class="date">
+                    {{event.EventDate | date:'dd/MM/yyyy'}}
+                </p>
+                <p>
+                    {{event.EventDescription}}
+                </p>
+            </div>
+        </div>
+        <ng-template #elseBlock>
+            <div class="container right">
+                <div class="content">
+                    <img src="assets/images/{{event.IMG}}">
+                    <h2>
+                        {{event.EventName}}
+                    </h2>
+                    <p class="date">
+                        {{event.EventDate | date:'dd/MM/yyyy'}}
+                    </p>
+                    <p>
+                        {{event.EventDescription}}
+                    </p>
+                </div>
+            </div>
+        </ng-template>
+    </div>
+</div>

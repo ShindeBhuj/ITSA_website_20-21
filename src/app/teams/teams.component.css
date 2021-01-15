@@ -1,0 +1,89 @@
+.container {
+  height: 100%;
+  width: 100%;
+  background: url(/assets/images/11.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+@font-face{
+  font-family: 'MT';
+  src: url(/assets/fonts/OstrichSansRounded-Medium.otf);
+}
+
+.top {
+  font-size: 120px;
+  color: #fff;
+  text-align: center;
+  font-family: 'MT';
+  padding-top: 5%;
+}
+
+.tnav {
+  background-color: #205dbf;
+  text-align: center;
+  font-size: 25px;
+  width: 85%;
+  height: 75px;
+  margin-left: 7.5%;
+  size: fixed;
+  font-family: Optima, sans-serif;
+}
+.onenav {
+  width: 10%;
+  float: left;
+  height: 100%;
+  line-height: 75px;
+}
+.fivenav {
+  width: 11%;
+  float: left;
+  height: 100%;
+  line-height: 75px;
+}
+.twonav {
+  width: 15%;
+  float: left;
+  height: 100%;
+}
+.threenav {
+  width: 21%;
+  float: left;
+  height: 100%;
+}
+.fournav {
+  width: 14%;
+  float: left;
+  height: 100%;
+  line-height: 75px;
+}
+.tnav a {
+  color: white;
+  text-decoration: none;
+  margin: 5px;
+  width: 10%;
+  height: 100%;
+  vertical-align: center;
+}
+.tnav .onenav:hover, .tnav .fivenav:hover, .tnav .twonav:hover, .tnav .threenav:hover, .tnav .fournav:hover {
+  background-color: #508ced;
+}
+@media screen and (max-width: 600px) {
+  .top {
+    font-size: 100px;
+  }
+  .tnav {
+    width: 100%;
+    height: 50px;
+    margin-left: 0;
+  }
+  .onenav, .twonav, .threenav, .fournav, .fivenav {
+    font-size: 15px;
+    background-color: #205dbf;
+    width: 100%;
+    line-height: 50px;
+  }
+}

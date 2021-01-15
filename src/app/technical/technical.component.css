@@ -1,0 +1,37 @@
+.margin{
+    background-image:inherit;
+    background-position: center;
+      background-size: cover;
+  }
+.margincard{
+  
+  margin-left:0%;
+  margin-right:0%; 
+
+}
+ a {
+    color: rgb(7, 7, 7);
+    text-decoration: none;
+}
+.card{
+    background-color:rgba(41, 48, 65, 0);
+    border: none;
+    font-size: 130%;
+    font-family: OCR A Std, monospace;
+    color: aliceblue;
+    text-align: center;
+  }
+.card:hover{
+    background-color:rgba(46, 129, 161, 0.781);
+  }
+  .modal-content{
+    background-color: rgba(46, 129, 161, 0.781);
+    color: aliceblue;
+  }
+  pre{
+    color: aliceblue;
+  }
+  img{
+    height: 12%;
+    width: 12%;
+  }
